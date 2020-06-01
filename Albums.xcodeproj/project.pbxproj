@@ -29,7 +29,6 @@
 		05A3A2D62483E93E0060AC65 /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A3A2D52483E93E0060AC65 /* MockResponse.swift */; };
 		05A3A2D82483E95C0060AC65 /* MockAlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A3A2D72483E95C0060AC65 /* MockAlbumsService.swift */; };
 		05A3A2E3248475A00060AC65 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A3A2E2248475A00060AC65 /* BaseViewModel.swift */; };
-		05A3A2E5248495070060AC65 /* AlbumsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A3A2E4248495070060AC65 /* AlbumsViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +68,6 @@
 		05A3A2D52483E93E0060AC65 /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
 		05A3A2D72483E95C0060AC65 /* MockAlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlbumsService.swift; sourceTree = "<group>"; };
 		05A3A2E2248475A00060AC65 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		05A3A2E4248495070060AC65 /* AlbumsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +130,6 @@
 				05A3A25024808C890060AC65 /* Info.plist */,
 				05A3A2D02482FDD70060AC65 /* AlbumViewModelTests.swift */,
 				05A3A2D2248301A50060AC65 /* AlbumsViewModelTests.swift */,
-				05A3A2E4248495070060AC65 /* AlbumsViewTests.swift */,
 			);
 			path = AlbumsTests;
 			sourceTree = "<group>";
@@ -369,7 +366,6 @@
 				05A3A2D12482FDD70060AC65 /* AlbumViewModelTests.swift in Sources */,
 				05A3A2D3248301A50060AC65 /* AlbumsViewModelTests.swift in Sources */,
 				05A3A2D62483E93E0060AC65 /* MockResponse.swift in Sources */,
-				05A3A2E5248495070060AC65 /* AlbumsViewTests.swift in Sources */,
 				05A3A2D82483E95C0060AC65 /* MockAlbumsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

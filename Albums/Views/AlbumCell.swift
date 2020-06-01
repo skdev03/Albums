@@ -67,9 +67,9 @@ extension AlbumCell {
         addSubview(artistNameLabel)
         addSubview(albumImageView)
         
-        albumImageView.anchor(top: topAnchor, topPadding: 8, left: leftAnchor, leftPadding: 8, bottom: bottomAnchor, bottomPadding: 8, right: nil, rightPadding: 0, width: 50, height: 50)
-        albumNameLabel.anchor(top: topAnchor, topPadding: 8, left: albumImageView.rightAnchor, leftPadding: 8, bottom: nil, bottomPadding: 0, right: rightAnchor, rightPadding: 32)
-        artistNameLabel.anchor(top: albumNameLabel.bottomAnchor, topPadding: 4, left: albumImageView.rightAnchor, leftPadding: 8, bottom: nil, bottomPadding: 0, right: rightAnchor, rightPadding: 32, width: 0, height: 21)
+        albumImageView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: nil, topPadding: 5, leftPadding: 8, bottomPadding: 5, rightPadding: 0, topPriority: .init(rawValue: 999), width: 50, height: 50)
+        albumNameLabel.anchor(top: topAnchor, left: albumImageView.rightAnchor, bottom: nil, right: rightAnchor, topPadding: 5, leftPadding: 8, bottomPadding: 0, rightPadding: 32)
+        artistNameLabel.anchor(top: albumNameLabel.bottomAnchor, left: albumImageView.rightAnchor, bottom: nil, right: rightAnchor, topPadding: 4, leftPadding: 8, bottomPadding: 0, rightPadding: 32, height: 21)
     }
 }
 

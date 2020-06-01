@@ -96,13 +96,14 @@ extension AlbumDetailViewController {
         view.addSubview(copyrightLabel)
         view.addSubview(albumPageButton)
         
-        imageView.anchor(top: view.topAnchor, topPadding: 100, left: nil, leftPadding: 0, bottom: nil, bottomPadding: 0, right: nil, rightPadding: 0, width: 200, height: 200)
+        imageView.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, topPadding: 100, leftPadding: 0, bottomPadding: 0, rightPadding: 0, width: 200, height: 200)
         imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        albumNameLabel.anchor(top: imageView.bottomAnchor, topPadding: 8, left: view.leftAnchor, leftPadding: 16, bottom: nil, bottomPadding: 0, right: view.rightAnchor, rightPadding: 16)
-        artistNameLabel.anchor(top: albumNameLabel.bottomAnchor, topPadding: 4, left: view.leftAnchor, leftPadding: 16, bottom: nil, bottomPadding: 0, right: view.rightAnchor, rightPadding: 16)
-        genresLabel.anchor(top: artistNameLabel.bottomAnchor, topPadding: 4, left: view.leftAnchor, leftPadding: 16, bottom: nil, bottomPadding: 0, right: view.rightAnchor, rightPadding: 16)
-        copyrightLabel.anchor(top: genresLabel.bottomAnchor, topPadding: 16, left: view.leftAnchor, leftPadding: 16, bottom: nil, bottomPadding: 0, right: view.rightAnchor, rightPadding: 16)
-        albumPageButton.anchor(top: nil, topPadding: 0, left: view.leftAnchor, leftPadding: 20, bottom: view.bottomAnchor, bottomPadding: 20, right: view.rightAnchor, rightPadding: 20, width: 0, height: 44)
+        
+        albumNameLabel.anchor(top: imageView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topPadding: 8, leftPadding: 16, bottomPadding: 0, rightPadding: 16)
+        artistNameLabel.anchor(top: albumNameLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topPadding: 4, leftPadding: 16, bottomPadding: 0, rightPadding: 16)
+        genresLabel.anchor(top: artistNameLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topPadding: 4, leftPadding: 16, bottomPadding: 0, rightPadding: 16)
+        copyrightLabel.anchor(top: genresLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topPadding: 16, leftPadding: 16, bottomPadding: 0, rightPadding: 16)
+        albumPageButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topPadding: 0, leftPadding: 20, bottomPadding: 20, rightPadding: 20, width: 0, height: 44)
     }
     
     private func populateViews() {

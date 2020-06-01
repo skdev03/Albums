@@ -9,10 +9,9 @@
 import UIKit
 
 extension UIView {
-    func anchor(top: NSLayoutYAxisAnchor?, topPadding: CGFloat,
-                left: NSLayoutXAxisAnchor?, leftPadding: CGFloat,
-                bottom: NSLayoutYAxisAnchor?, bottomPadding: CGFloat,
-                right: NSLayoutXAxisAnchor?, rightPadding: CGFloat,
+    func anchor(top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?,
+                topPadding: CGFloat, leftPadding: CGFloat, bottomPadding: CGFloat, rightPadding: CGFloat,
+                topPriority: UILayoutPriority = .defaultHigh, leftPriority: UILayoutPriority = .defaultHigh, bottomPriority: UILayoutPriority = .defaultHigh, rightPriority: UILayoutPriority = .defaultHigh,
                 width: CGFloat = 0, height: CGFloat = 0, enableInsets: Bool = false) {
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -26,19 +25,27 @@ extension UIView {
         }
         
         if let top = top {
-            topAnchor.constraint(equalTo: top, constant: topPadding + topInset).isActive = true
+            let topAnchorConstraint = topAnchor.constraint(equalTo: top, constant: topPadding + topInset)
+            topAnchorConstraint.priority = topPriority
+            topAnchorConstraint.isActive = true
         }
         
         if let left = left {
-            leftAnchor.constraint(equalTo: left, constant: leftPadding).isActive = true
+            let leftAnchorConstraint = leftAnchor.constraint(equalTo: left, constant: leftPadding)
+            leftAnchorConstraint.priority = leftPriority
+            leftAnchorConstraint.isActive = true
         }
         
         if let bottom = bottom {
-            bottomAnchor.constraint(equalTo: bottom, constant: -bottomPadding - bottomInset).isActive = true
+            let bottomAnchorConstraint = bottomAnchor.constraint(equalTo: bottom, constant: -bottomPadding - bottomInset)
+            bottomAnchorConstraint.priority = bottomPriority
+            bottomAnchorConstraint.isActive = true
         }
         
         if let right = right {
-            rightAnchor.constraint(equalTo: right, constant: -rightPadding).isActive = true
+            let rightAnchorConstraint = rightAnchor.constraint(equalTo: right, constant: -rightPadding)
+            rightAnchorConstraint.priority = rightPriority
+            rightAnchorConstraint.isActive = true
         }
         
         if width != 0 {

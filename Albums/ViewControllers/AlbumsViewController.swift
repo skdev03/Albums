@@ -84,10 +84,10 @@ extension AlbumsViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 44
+        tableView.estimatedRowHeight = 60
         
         view.addSubview(tableView)
-        tableView.anchor(top: view.topAnchor, topPadding: 0, left: view.leftAnchor, leftPadding: 0, bottom: view.bottomAnchor, bottomPadding: 0, right: view.rightAnchor, rightPadding: 0)
+        tableView.anchor(top: view.topAnchor, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topPadding: 0, leftPadding: 0, bottomPadding: 0, rightPadding: 0)
     }
     
     private func setupBindings() {
